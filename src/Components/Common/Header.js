@@ -19,7 +19,7 @@ const Header = () => {
 
     return (
         <header className="fixed w-full my-2 top-0 z-[999]">
-            <div className="container mx-auto min-h-16 border border-blue-200 rounded-lg backdrop-blur-sm px-4 flex justify-between items-center">
+            <div className="container mx-auto min-h-16 border border-blue-200 rounded-full overflow-hidden backdrop-blur-sm px-4 flex justify-between items-center">
 
                 {/* Logo */}
                 <div className="text-2xl font-bold text-blue-600">
@@ -29,7 +29,7 @@ const Header = () => {
                 </div>
 
                 {/* Desktop Menu */}
-                <nav className="hidden md:flex space-x-8 text-gray-700 font-medium">
+                <nav className="hidden md:flex space-x-8  text-gray-700 font-medium">
                     {navItems.map((item) => (
                         <Link
                             key={item.href}
