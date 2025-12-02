@@ -2,15 +2,20 @@ import React from 'react';
 
 const WhatWeOffer = () => {
     return (
-        <div className='my-10 lg:my-20 relative'>
-            <img className='absolute right-0 top-0 xl:w-48 w-10 bottom-0' src="/Images/WhatWeOffer/extran-design.png" alt="" />
+        <section id='services' className='my-10 lg:my-20 relative overflow-hidden'>
+            <img
+                className='absolute animate-rotate-clockwise -right-20 top-0 xl:w-48 w-10 bottom-0'
+                src="/Images/WhatWeOffer/Union.png"
+                alt=""
+            />
+
             <div className='container mx-auto'>
                 <div className='text-center py-10'>
                     <h2 className='text-5xl mb-3 text-primary font-semibold'>What We Offer</h2>
                     <p>Comprehensive AI solutions designed to transform your business operations and drive growth.</p>
                 </div>
                 <div className='flex justify-between flex-wrap gap-5'>
-                    <div className='border-2 w-full xl:w-[60%] border-r-4 border-primary p-5 rounded-3xl'>
+                    <div className='border-2 duration-500 hover:shadow-[0px_0px_20px_#0e3b58] w-full xl:w-[60%] border-r-4 border-primary p-5 rounded-3xl'>
                         <div className='flex items-start justify-between'>
                             <div>
                                 <h2 className='text-2xl text-primary mb-2 font-semibold'>AI Chatbots</h2>
@@ -34,7 +39,7 @@ const WhatWeOffer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='border-2 w-full xl:w-[38%] border-r-4 border-primary p-5 rounded-3xl'>
+                    <div className='border-2 duration-500 hover:shadow-[0px_0px_20px_#0e3b58] w-full xl:w-[38%] border-r-4 border-primary p-5 rounded-3xl'>
                         <div className='flex items-start justify-between'>
                             <div>
                                 <h2 className='text-2xl text-primary mb-2 font-semibold'>AI Chatbots</h2>
@@ -58,7 +63,7 @@ const WhatWeOffer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='border-2 w-full xl:w-[38%] border-r-4 border-primary p-5 rounded-3xl'>
+                    <div className='border-2 duration-500 hover:shadow-[0px_0px_20px_#0e3b58] w-full xl:w-[38%] border-r-4 border-primary p-5 rounded-3xl'>
                         <div className='flex items-start justify-between'>
                             <div>
                                 <h2 className='text-2xl text-primary mb-2 font-semibold'>AI Chatbots</h2>
@@ -82,7 +87,7 @@ const WhatWeOffer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='border-2 w-full xl:w-[60%] border-r-4 border-primary p-5 rounded-3xl'>
+                    <div className='border-2 duration-500 hover:shadow-[0px_0px_20px_#0e3b58] w-full xl:w-[60%] border-r-4 border-primary p-5 rounded-3xl'>
                         <div className='flex items-start justify-between'>
                             <div>
                                 <h2 className='text-2xl text-primary mb-2 font-semibold'>AI Chatbots</h2>
@@ -108,7 +113,7 @@ const WhatWeOffer = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 

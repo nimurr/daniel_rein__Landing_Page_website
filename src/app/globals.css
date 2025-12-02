@@ -1,12 +1,17 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities; 
+@tailwind utilities;
 
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  height: 100%;
+  background-color: #ffffff;
+  scroll-behavior: smooth;
+  scroll-snap-stop: always;
 }
+
 
 @theme inline {
   --color-background: var(--background);
@@ -26,6 +31,7 @@
   font-family: "Space Grotesk", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  margin: 0;
 }
 
 body {
@@ -38,4 +44,19 @@ body {
   border: none !important;
   box-shadow: none !important;
   background: transparent !important;
+}
+
+@keyframes rotate-clockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-rotate-clockwise {
+  animation: rotate-clockwise 4s linear infinite;
+  /* Adjust the time as per your needs */
 }

@@ -5,9 +5,10 @@ import { WiStars } from "react-icons/wi";
 
 const Hero = () => {
     return (
-        <div className='container mx-auto bg-gradient-to-l from-[#c7d2dde0] to-[#e4e9ee8f] lg:h-screen h-auto relative overflow-hidden rounded-[50px] mt-5'>
+        <section id='home' className='container mx-auto bg-gradient-to-l from-[#c7d2dde0] to-[#e4e9ee8f] lg:h-screen h-auto relative overflow-hidden rounded-[50px] mt-5'>
             <Header />
             <img className='absolute lg:block hidden right-0 bottom-0 w-1/2' src="/Images/Home/banner_image.png" alt="" />
+            
             <div className='flex items-start gap-20 justify-end h-full flex-col z-10'>
                 <div className='lg:p-10 p-5 '>
                     <h1 className='text-primary text-3xl lg:text-6xl font-semibold'>Transform Your Business <br />
@@ -22,28 +23,28 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className='bg-[#0e3b588f] rounded-[40px] backdrop-blur-sm lg:min-h-72 w-full'>
-                    <img className='absolute lg:block hidden left-0 top-0 w-72' src="/Images/Home/lighting-effect.png" alt="" />
-                    <img className='absolute lg:block hidden right-0 top-0 w-72' src="/Images/Home/lighting-effect.png" alt="" />
+                    <img className='absolute animate-pulse lg:block hidden left-0 top-0 w-72' src="/Images/Home/lighting-effect.png" alt="" />
+                    <img className='absolute animate-pulse lg:block hidden right-0 top-0 w-72' src="/Images/Home/lighting-effect.png" alt="" />
                     <div className='flex items-center text-white gap-5 p-8 flex-wrap justify-around'>
                         <div className='text-center min-w-52'>
-                            <h2 className='text-3xl'>50+</h2>
-                            <p className='my-2'>AI Solutions Deployed</p>
+                            <h2 className='text-4xl font-semibold'>50+</h2>
+                            <p className='my-1'>AI Solutions Deployed</p>
                             <img className='w-12 mx-auto' src="/Images/Home/icons/icons-1.png" alt="" />
                         </div>
                         <div className='text-center min-w-52'>
-                            <h2 className='text-3xl'>85%</h2>
-                            <p className='my-2'>Time Saved</p>
+                            <h2 className='text-4xl font-semibold'>85%</h2>
+                            <p className='my-1'>Time Saved</p>
                             <img className='w-12 mx-auto' src="/Images/Home/icons/icons-1.png" alt="" />
                         </div>
                         <div className='text-center min-w-52'>
-                            <h2 className='text-3xl'>24/7</h2>
-                            <p className='my-2'>AI Support</p>
+                            <h2 className='text-4xl font-semibold'>24/7</h2>
+                            <p className='my-1'>AI Support</p>
                             <img className='w-12 mx-auto' src="/Images/Home/icons/icons-1.png" alt="" />
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 

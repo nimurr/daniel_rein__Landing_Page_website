@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { IoMenuOutline } from "react-icons/io5";
 import { RxCross1 } from "react-icons/rx";
 import Link from "next/link";
@@ -8,14 +8,42 @@ import { usePathname } from "next/navigation";
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     const pathname = usePathname(); // Use usePathname instead of useParams to get current pathname
+    const [activeSection, setActiveSection] = useState("home");
 
     const navItems = [
-        { label: "Services", href: "#services" },
-        { label: "How It Works", href: "#how-it-works" },
-        { label: "Benefits", href: "#benefits" },
-        { label: "About", href: "#about" },
-        { label: "Contact", href: "#contact" },
+        { name: "Home", id: "home" },
+        { name: "Services", id: "services" },
+        { name: "How It Works", id: "howitworks" },
+        { name: "Benefits", id: "benefits" },
+        { name: "About", id: "about" },
+        { name: "Contact", id: "contact" },
     ];
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setActiveSection(entry.target.id);
+                    }
+                });
+            },
+            { threshold: 0.6 } // 60% visible
+        );
+
+        navItems.forEach((item) => {
+            const section = document.getElementById(item.id);
+            if (section) observer.observe(section);
+        });
+
+        return () => {
+            navItems.forEach((item) => {
+                const section = document.getElementById(item.id);
+                if (section) observer.unobserve(section);
+            });
+        };
+    }, []);
+
 
     return (
         <header className="w-full top-0 p-5 z-[999]">
@@ -29,20 +57,23 @@ const Header = () => {
                 </div>
 
                 {/* Desktop Menu */}
-                <nav className="hidden lg:flex space-x-8 px-5 py-3 rounded-full bg-[#c7d2dd] backdrop-blur-sm text-gray-700 font-medium">
+                <nav className="hidden lg:flex gap-5 p-2 rounded-full bg-[#c7d2dd] backdrop-blur-sm text-gray-700 font-medium">
                     {navItems.map((item) => (
-                        <Link
-                            key={item.href}
-                            href={item.href}
-                            className={`transition py-3 px-5 ${pathname.includes(item.href) // Check if pathname contains item.href
-                                ? "font-semibold bg-primary text-white rounded-full"
-                                : "hover:text-blue-600"
+                        <a
+                            key={item.id}
+                            href={`#${item.id}`}
+                            onClick={() => setActiveSection(item.id)}
+                            className={`rounded-full transition flex items-center py-3 px-8 justify-center ${activeSection === item.id
+                                ? "bg-primary text-white "
+                                : "text-gray-800"
                                 }`}
                         >
-                            {item.label}
-                        </Link>
+                            {item.name}
+                        </a>
                     ))}
                 </nav>
+
+
 
                 {/* Mobile Menu Button */}
                 <button
