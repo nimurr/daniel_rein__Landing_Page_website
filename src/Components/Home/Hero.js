@@ -8,7 +8,7 @@ const Hero = () => {
         <section id='home' className='container mx-auto bg-gradient-to-l from-[#c7d2dde0] to-[#e4e9ee8f] lg:h-screen h-auto relative overflow-hidden rounded-[50px] mt-5'>
             <Header />
             <img className='absolute lg:block hidden right-0 bottom-0 w-1/2' src="/Images/Home/banner_image.png" alt="" />
-            
+
             <div className='flex items-start gap-20 justify-end h-full flex-col z-10'>
                 <div className='lg:p-10 p-5 '>
                     <h1 className='text-primary text-3xl lg:text-6xl font-semibold'>Transform Your Business <br />
