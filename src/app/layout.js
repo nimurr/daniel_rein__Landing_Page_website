@@ -41,7 +41,9 @@ export default function RootLayout({ children }) {
 
         />
         <Providers>
-          {children}
+          <div className="px-2 sm:px-0">
+            {children}
+          </div>
         </Providers>
       </body>
     </html >
