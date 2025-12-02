@@ -10,12 +10,11 @@ const Header = () => {
     const pathname = usePathname();
 
     const navItems = [
-        { label: "Home", href: "/" },
-        { label: "Services", href: "/services" },
-        { label: "How It Works", href: "/how-it-works" },
-        { label: "Benefits", href: "/benefits" },
-        { label: "About", href: "/about" },
-        { label: "Contact", href: "/contact" },
+        { label: "Services", href: "#services" },
+        { label: "How It Works", href: "#how-it-works" },
+        { label: "Benefits", href: "#benefits" },
+        { label: "About", href: "#about" },
+        { label: "Contact", href: "#contact" },
     ];
 
     return (
@@ -35,8 +34,8 @@ const Header = () => {
                         <Link
                             key={item.href}
                             href={item.href}
-                            className={`transition ${pathname === item.href
-                                ? "text-blue-600 font-semibold border-b-2 border-blue-600"
+                            className={`transition py-3 px-8 ${pathname === item.href
+                                ? " font-semibold bg-primary text-white  rounded-full"
                                 : "hover:text-blue-600"
                                 }`}
                         >
