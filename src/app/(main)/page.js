@@ -1,4 +1,5 @@
 'use client';
+import BusinessBenefits from '@/Components/Home/BusinessBenefits';
 import Hero from '@/Components/Home/Hero';
 import Howitworks from '@/Components/Home/Howitworks';
 import OurMission from '@/Components/Home/OurMission';
@@ -16,6 +17,7 @@ const Page = () => {
             <WhyChooseZimriTech />
             <Predicteds />
             <OurMission />
+            <BusinessBenefits />
         </div>
     );
 }
