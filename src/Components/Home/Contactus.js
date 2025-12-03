@@ -33,6 +33,13 @@ const Contactus = () => {
 
             </div>
             <div>
+                <div className='flex items-center gap-5 h-72 pt-8'>
+                    <img className='h-full' src="/Images/Contactus/line_arrow.png" alt="" />
+                    <div>
+                        <p className='text-gray-500 text-xl '>Ready to transform your business with AI? Let's discuss your project and create a custom solution for you.</p>
+                    </div>
+                    <img className='h-full' src="/Images/Contactus/Line.png" alt="" />
+                </div>
                 <form className='space-y-8 bg-[#f2f2f7] p-10 rounded-2xl' action="">
                     <h2 className='text-2xl font-semibold'>Send us a message</h2>
                     <input className='w-full outline-none  border-b-2 border-gray-400 p-3 mb-3' type="text" placeholder='Name' />
