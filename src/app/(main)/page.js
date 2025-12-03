@@ -19,8 +19,8 @@ const Page = () => {
             <Predicteds />
             <OurMission />
             <BusinessBenefits />
-            <Contactus /> 
-            
+            <Contactus />
+
         </div>
     );
 }
