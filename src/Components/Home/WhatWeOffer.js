@@ -4,7 +4,7 @@ const WhatWeOffer = () => {
     return (
         <section id='services' className='my-10 lg:my-20 relative overflow-hidden'>
             <img
-                className='absolute animate-rotate-clockwise -right-20 top-0 xl:w-48 w-10 bottom-0'
+                className='absolute animate-rotate-clockwise lg:block hidden -right-20 top-0 xl:w-48 w-10 bottom-0'
                 src="/Images/WhatWeOffer/Union.png"
                 alt=""
             />
