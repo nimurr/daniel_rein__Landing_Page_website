@@ -7,8 +7,14 @@ const Contactus = () => {
     return (
         <section id='contact' className='container mx-auto grid lg:grid-cols-2 gap-10 lg:my-20 my-10'>
             <div>
-                <h2 className='text-primary text-[100px] leading-[1.1] font-bold'>Let’s get <br />
-                    in touch</h2>
+
+
+                <main>
+                    <h2 className='clip-text text-primary text-[100px] leading-[1.1] font-bold'>Let’s get <br />
+                        in touch</h2>
+                </main>
+
+
                 <h3 className='text-2xl font-semibold my-5'>Contact Information</h3>
                 <p className=''>We're here to help you succeed with AI. Reach out to us through any of these
                     channels, and we'll get back to you promptly.</p>

@@ -2,8 +2,8 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className="container mx-auto rounded-3xl bg-gradient-to-b from-[#0d3b66] to-[#1971c3] text-white py-10 lg:py-20 text-lg mt-5">
-            <div className="grid md:grid-cols-2 xl:grid-cols-4 items-start container mx-auto gap-20 px-10 lg:px-20">
+        <div className="container mx-auto rounded-3xl bg-gradient-to-b from-[#0d3b66] to-[#1971c3] text-white p-10 lg:p-20 text-lg mt-5">
+            <div className="grid md:grid-cols-2 xl:grid-cols-4 items-start container mx-auto gap-20 ">
                 {/* Company Info Section */}
                 <div className="w-full  lg:mb-0">
                     <h3 className="text-2xl font-semibold">ZimriTech</h3>
