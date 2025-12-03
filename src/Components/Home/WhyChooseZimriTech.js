@@ -33,7 +33,9 @@ const WhyChooseZimriTech = () => {
                         <img src="/Images/WhyChooseZimriTech/2.png" alt="" />
                     </div>
                 </div>
-                <img className='lg:w-full mx-auto -mt-10' src="/Images/WhyChooseZimriTech/image-ai.png" alt="" />
+                <div className='robotImageUse  '>
+                    <img className='lg:w-2/3 animation_image  mx-auto -mt-10' src="/Images/WhyChooseZimriTech/robot.png" alt="" />
+                </div>
                 <div className='w-auto lg:mt-20 space-y-20'>
                     <div className='flex items-start gap-5'>
                         <img src="/Images/WhyChooseZimriTech/cc.png" alt="" />
