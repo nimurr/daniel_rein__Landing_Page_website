@@ -8,7 +8,7 @@ const BusinessBenefits = () => {
                 <p>Transform your business operations with AI-powered solutions that deliver measurable
                     results.</p>
             </div>
-            <div className='grid grid-cols-4 gap-5'>
+            <div className='grid md:grid-cols-2 xl:grid-cols-4 gap-5'>
                 <div className='border-2 border-primary p-5 rounded-lg'>
                     <img className=' w-12' src="/Images/BusinessBenefits/1.png" alt="" />
                     <h2 className='my-2 text-2xl font-semibold text-primary'>Save Time</h2>

@@ -5,7 +5,7 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const Contactus = () => {
     return (
-        <section id='contact' className='container mx-auto grid grid-cols-2 gap-10 lg:my-20 my-10'>
+        <section id='contact' className='container mx-auto grid lg:grid-cols-2 gap-10 lg:my-20 my-10'>
             <div>
                 <h2 className='text-primary text-[100px] leading-[1.1] font-bold'>Let’s get <br />
                     in touch</h2>
