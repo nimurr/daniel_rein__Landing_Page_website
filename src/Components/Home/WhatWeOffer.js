@@ -1,8 +1,15 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const WhatWeOffer = () => {
+    // Define motion variants for item animations
+    const itemVariants = {
+        hidden: { opacity: 0, y: 50 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+    };
+
     return (
-        <section id='services' className='my-10 lg:my-20 relative overflow-hidden'>
+        <section id='services' className='py-10 lg:py-20 relative overflow-hidden'>
             <img
                 className='absolute animate-rotate-clockwise lg:block hidden -right-20 top-0 xl:w-48 w-10 bottom-0'
                 src="/Images/WhatWeOffer/Union.png"
@@ -10,12 +17,44 @@ const WhatWeOffer = () => {
             />
 
             <div className='container mx-auto'>
-                <div className='text-center py-10'>
-                    <h2 className='text-5xl mb-3 text-primary font-semibold'>What We Offer</h2>
-                    <p>Comprehensive AI solutions designed to transform your business operations and drive growth.</p>
-                </div>
+                {/* Title and Description Animation on Scroll */}
+                <motion.div
+                    className='text-center py-10'
+                    initial="hidden"
+                    whileInView="visible"
+                    variants={itemVariants}
+                    viewport={{ once: true, amount: 0.1 }}
+                >
+                    <motion.h2
+                        className='text-5xl mb-3 text-primary font-semibold'
+                        initial="hidden"
+                        whileInView="visible"
+                        variants={itemVariants}
+                        viewport={{ once: true, amount: 0.1 }}
+                    >
+                        What We Offer
+                    </motion.h2>
+                    <motion.p
+                        initial="hidden"
+                        whileInView="visible"
+                        variants={itemVariants}
+                        viewport={{ once: true, amount: 0.1 }}
+                    >
+                        Comprehensive AI solutions designed to transform your business operations and drive growth.
+                    </motion.p>
+                </motion.div>
+
+                {/* Flex Container for Offering Cards */}
                 <div className='flex justify-between flex-wrap gap-5'>
-                    <div className='border-2 duration-500 hover:shadow-[0px_0px_20px_#0e3b58] w-full xl:w-[60%] border-r-4 border-primary p-5 rounded-3xl'>
+                    {/* Card 1 */}
+                    <motion.div
+                        className='border-2 duration-500 hover:shadow-[0px_0px_20px_#0e3b58] w-full xl:w-[60%] border-r-4 border-primary p-5 rounded-3xl'
+                        initial="hidden"
+                        whileInView="visible"
+                        variants={itemVariants}
+                        whileHover={{ scale: 1.05 }}
+                        viewport={{ once: true, amount: 0.1 }}
+                    >
                         <div className='flex items-start justify-between'>
                             <div>
                                 <h2 className='text-2xl text-primary mb-2 font-semibold'>AI Chatbots</h2>
@@ -39,8 +78,17 @@ const WhatWeOffer = () => {
                                 </button>
                             </div>
                         </div>
-                    </div>
-                    <div className='border-2 duration-500 hover:shadow-[0px_0px_20px_#0e3b58] w-full xl:w-[38%] border-r-4 border-primary p-5 rounded-3xl'>
+                    </motion.div>
+
+                    {/* Card 2 */}
+                    <motion.div
+                        className='border-2 duration-500 hover:shadow-[0px_0px_20px_#0e3b58] w-full xl:w-[38%] border-r-4 border-primary p-5 rounded-3xl'
+                        initial="hidden"
+                        whileInView="visible"
+                        variants={itemVariants}
+                        whileHover={{ scale: 1.05 }}
+                        viewport={{ once: true, amount: 0.1 }}
+                    >
                         <div className='flex items-start justify-between'>
                             <div>
                                 <h2 className='text-2xl text-primary mb-2 font-semibold'>AI Chatbots</h2>
@@ -64,8 +112,17 @@ const WhatWeOffer = () => {
                                 </button>
                             </div>
                         </div>
-                    </div>
-                    <div className='border-2 duration-500 hover:shadow-[0px_0px_20px_#0e3b58] w-full xl:w-[38%] border-r-4 border-primary p-5 rounded-3xl'>
+                    </motion.div>
+
+                    {/* Card 3 */}
+                    <motion.div
+                        className='border-2 duration-500 hover:shadow-[0px_0px_20px_#0e3b58] w-full xl:w-[38%] border-r-4 border-primary p-5 rounded-3xl'
+                        initial="hidden"
+                        whileInView="visible"
+                        variants={itemVariants}
+                        whileHover={{ scale: 1.05 }}
+                        viewport={{ once: true, amount: 0.1 }}
+                    >
                         <div className='flex items-start justify-between'>
                             <div>
                                 <h2 className='text-2xl text-primary mb-2 font-semibold'>Workflow Automations</h2>
@@ -89,8 +146,17 @@ const WhatWeOffer = () => {
                                 </button>
                             </div>
                         </div>
-                    </div>
-                    <div className='border-2 duration-500 hover:shadow-[0px_0px_20px_#0e3b58] w-full xl:w-[60%] border-r-4 border-primary p-5 rounded-3xl'>
+                    </motion.div>
+
+                    {/* Card 4 */}
+                    <motion.div
+                        className='border-2 duration-500 hover:shadow-[0px_0px_20px_#0e3b58] w-full xl:w-[60%] border-r-4 border-primary p-5 rounded-3xl'
+                        initial="hidden"
+                        whileInView="visible"
+                        variants={itemVariants}
+                        whileHover={{ scale: 1.05 }}
+                        viewport={{ once: true, amount: 0.1 }}
+                    >
                         <div className='flex items-start justify-between'>
                             <div>
                                 <h2 className='text-2xl text-primary mb-2 font-semibold'>Custom Dashboards</h2>
@@ -114,7 +180,7 @@ const WhatWeOffer = () => {
                                 </button>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </section>

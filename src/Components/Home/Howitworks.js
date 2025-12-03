@@ -78,17 +78,21 @@ const Howitworks = () => {
     return (
         <section id='howitworks' className='my-10 lg:my-20 relative'>
             <img
-                className='absolute animate-bounce left-0 md:-top-20 -top-10 xl:w-60 w-28'
+                className='absolute animate-bounce left-0 md:-top-20 z-10 -top-10 xl:w-60 w-28'
                 src="/Images/howItWork/Visual.png"
                 alt="Design"
             />
-            <div className='bg-[#f1f0f3] sm:p-10 p-5 container mx-auto rounded-3xl'>
+            
+            <div className='bg-[#f1f0f381] sm:p-10 p-5 container mx-auto rounded-3xl relative'>
+                {/* Glowing Border Animation */}
+                <div className="moving-border"></div>
+
                 <div className='text-center py-10'>
                     <h2 className='text-5xl mb-3 text-primary font-semibold'>How It Works</h2>
                     <p>Our proven 4-step process ensures your AI transformation is seamless and successful.</p>
                 </div>
 
-                <div className='bg-white p-8 rounded-2xl shadow-md border-t-2 border-b-2 border-primary'>
+                <div className='bg-white p-8 rounded-2xl shadow-md border-t-2 border-b-2 border-primary relative'>
                     <h3 className='text-3xl text-center font-semibold mb-3 text-primary'>{steps[currentStep].title}</h3>
                     <p className='mb-5 text-center'>{steps[currentStep].description}</p>
 
@@ -96,7 +100,9 @@ const Howitworks = () => {
                     {currentStep < steps.length - 1 ? (
                         <ul className='grid grid-cols-1 lg:grid-cols-2 gap-5 mb-5'>
                             {steps[currentStep].points.map((point, index) => (
-                                <li className='list-none flex items-center font-semibold text-gray-700 gap-3 border border-primary p-3 rounded-lg' key={index}><IoMdCheckmarkCircleOutline className='text-primary text-2xl ' />{point}</li>
+                                <li className='list-none flex items-center font-semibold text-gray-700 gap-3 border border-primary p-3 rounded-lg' key={index}>
+                                    <IoMdCheckmarkCircleOutline className='text-primary text-2xl' />{point}
+                                </li>
                             ))}
                         </ul>
                     ) : (
@@ -151,7 +157,6 @@ const Howitworks = () => {
                                     Submit
                                 </button>
                             </div>
-
                         </form>
                     )}
 
@@ -186,9 +191,6 @@ const Howitworks = () => {
                                 </button>
                             </div>
                         )}
-
-
-
                     </div>
                 </div>
             </div>

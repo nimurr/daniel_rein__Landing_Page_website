@@ -8,8 +8,8 @@ const WhyChooseZimriTech = () => {
                 <p>Our proven 4-step process ensures your AI transformation is seamless and
                     successful.</p>
             </div>
-            <div>
-                <img className='mx-auto' src="/Images/WhyChooseZimriTech/Lines.png" alt="" />
+            <div className='relative w-full'>
+                <img className='mx-auto w-full' src="/Images/WhyChooseZimriTech/Lines.png" alt="" />
             </div>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-20 mb-5'>
                 <div className='w-auto mt-20 space-y-20'>
@@ -20,7 +20,7 @@ const WhyChooseZimriTech = () => {
                             <p>Years of expertise in AI implementation
                                 across diverse industries.</p>
                         </div>
-                        <img src="/Images/WhyChooseZimriTech/1.png" alt="" />
+                        <img className='textMoveAnimate' src="/Images/WhyChooseZimriTech/1.png" alt="" />
                     </div>
                     <div className='flex items-start gap-5'>
                         <img src="/Images/WhyChooseZimriTech/bb.png" alt="" />
@@ -30,7 +30,7 @@ const WhyChooseZimriTech = () => {
                                 business and adapt to changing
                                 demands.</p>
                         </div>
-                        <img src="/Images/WhyChooseZimriTech/2.png" alt="" />
+                        <img className='textMoveAnimate' src="/Images/WhyChooseZimriTech/2.png" alt="" />
                     </div>
                 </div>
                 <div className='robotImageUse  '>
@@ -44,7 +44,7 @@ const WhyChooseZimriTech = () => {
                             <p>Tailored AI solutions designed
                                 specifically for your business needs.</p>
                         </div>
-                        <img src="/Images/WhyChooseZimriTech/3.png" alt="" />
+                        <img className='textMoveAnimate' src="/Images/WhyChooseZimriTech/3.png" alt="" />
                     </div>
                     <div className='flex items-start gap-5'>
                         <img src="/Images/WhyChooseZimriTech/dd.png" alt="" />
@@ -53,7 +53,7 @@ const WhyChooseZimriTech = () => {
                             <p>Round-the-clock monitoring and
                                 support for all your AI implementations.</p>
                         </div>
-                        <img src="/Images/WhyChooseZimriTech/4.png" alt="" />
+                        <img className='textMoveAnimate' src="/Images/WhyChooseZimriTech/4.png" alt="" />
                     </div>
                 </div>
             </div>

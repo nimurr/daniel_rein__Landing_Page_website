@@ -11,7 +11,7 @@ import React from 'react';
 const Page = () => {
 
     return (
-        <div className=''>
+        <div className='relative'>
             <Hero />
             <WhatWeOffer />
             <Howitworks />
@@ -19,7 +19,8 @@ const Page = () => {
             <Predicteds />
             <OurMission />
             <BusinessBenefits />
-            <Contactus />
+            <Contactus /> 
+            
         </div>
     );
 }

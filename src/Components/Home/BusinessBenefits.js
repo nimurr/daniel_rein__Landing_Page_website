@@ -1,16 +1,48 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const BusinessBenefits = () => {
+    // Define the motion variants for the items
+    const itemVariants = {
+        hidden: { opacity: 0, y: 50 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+    };
+
     return (
         <section id='benefits' className='container mx-auto lg:my-20 my-10'>
             <div className='text-center py-10'>
-                <h2 className='text-5xl mb-3 text-primary font-semibold'>Business Benefits</h2>
-                <p>Transform your business operations with AI-powered solutions that deliver measurable
-                    results.</p>
+                {/* Title and Description Animation on Scroll */}
+                <motion.h2
+                    className='text-5xl mb-3 text-primary font-semibold'
+                    initial="hidden"
+                    whileInView="visible"
+                    variants={itemVariants}
+                    viewport={{ once: true, amount: 0.1 }}
+                >
+                    Business Benefits
+                </motion.h2>
+                <motion.p
+                    initial="hidden"
+                    whileInView="visible"
+                    variants={itemVariants}
+                    viewport={{ once: true, amount: 0.1 }}
+                >
+                    Transform your business operations with AI-powered solutions that deliver measurable results.
+                </motion.p>
             </div>
+
             <div className='grid md:grid-cols-2 xl:grid-cols-4 gap-5'>
-                <div className='border-2 border-primary p-5 rounded-lg'>
-                    <img className=' w-12' src="/Images/BusinessBenefits/1.png" alt="" />
+                {/* Benefit 1 */}
+                <motion.div
+                    className='relative duration-500 hover:shadow-[0px_0px_15px_#0e3b58] border-primary p-5 rounded-lg'
+                    initial="hidden"
+                    whileInView="visible"
+                    variants={itemVariants}
+                    whileHover={{ scale: 1.05 }}
+                    viewport={{ once: true, amount: 0.1 }}
+                >
+                    <div className="moving-border"></div>
+                    <img className='w-12' src="/Images/BusinessBenefits/1.png" alt="" />
                     <h2 className='my-2 text-2xl font-semibold text-primary'>Save Time</h2>
                     <p>Up to 40 hours saved per week</p>
                     <span className='mt-3 text-gray-500'>Automate repetitive tasks and free up your team to focus on strategic initiatives.</span>
@@ -21,9 +53,19 @@ const BusinessBenefits = () => {
                         <li className='flex items-center gap-3'><img className='w-5' src="/Images/BusinessBenefits/star.png" alt="" />Intelligent task scheduling</li>
                         <li className='flex items-center gap-3'><img className='w-5' src="/Images/BusinessBenefits/star.png" alt="" />Reduced manual work</li>
                     </ul>
-                </div>
-                <div className='border-2 border-primary p-5 rounded-lg'>
-                    <img className=' w-12' src="/Images/BusinessBenefits/2.png" alt="" />
+                </motion.div>
+
+                {/* Benefit 2 */}
+                <motion.div
+                    className='relative duration-500 hover:shadow-[0px_0px_15px_#0e3b58] border-primary p-5 rounded-lg'
+                    initial="hidden"
+                    whileInView="visible"
+                    variants={itemVariants}
+                    whileHover={{ scale: 1.05 }}
+                    viewport={{ once: true, amount: 0.1 }}
+                >
+                    <div className="moving-border"></div>
+                    <img className='w-12' src="/Images/BusinessBenefits/2.png" alt="" />
                     <h2 className='my-2 text-2xl font-semibold text-primary'>Reduce Costs</h2>
                     <p>Average 60% cost reduction</p>
                     <span className='mt-3 text-gray-500'>Lower operational costs through intelligent automation and optimized processes.</span>
@@ -34,9 +76,19 @@ const BusinessBenefits = () => {
                         <li className='flex items-center gap-3'><img className='w-5' src="/Images/BusinessBenefits/star.png" alt="" />Optimized resource usage</li>
                         <li className='flex items-center gap-3'><img className='w-5' src="/Images/BusinessBenefits/star.png" alt="" />Efficient process management</li>
                     </ul>
-                </div>
-                <div className='border-2 border-primary p-5 rounded-lg'>
-                    <img className=' w-12' src="/Images/BusinessBenefits/3.png" alt="" />
+                </motion.div>
+
+                {/* Benefit 3 */}
+                <motion.div
+                    className='relative duration-500 hover:shadow-[0px_0px_15px_#0e3b58] border-primary p-5 rounded-lg'
+                    initial="hidden"
+                    whileInView="visible"
+                    variants={itemVariants}
+                    whileHover={{ scale: 1.05 }}
+                    viewport={{ once: true, amount: 0.1 }}
+                >
+                    <div className="moving-border"></div>
+                    <img className='w-12' src="/Images/BusinessBenefits/3.png" alt="" />
                     <h2 className='my-2 text-2xl font-semibold text-primary'>Scale Faster</h2>
                     <p>10x faster scaling capability</p>
                     <span className='mt-3 text-gray-500'>Grow your business without proportional increases in operational overhead.</span>
@@ -47,9 +99,19 @@ const BusinessBenefits = () => {
                         <li className='flex items-center gap-3'><img className='w-5' src="/Images/BusinessBenefits/star.png" alt="" />Seamless growth management</li>
                         <li className='flex items-center gap-3'><img className='w-5' src="/Images/BusinessBenefits/star.png" alt="" />Adaptive system architecture</li>
                     </ul>
-                </div>
-                <div className='border-2 border-primary p-5 rounded-lg'>
-                    <img className=' w-12' src="/Images/BusinessBenefits/4.png" alt="" />
+                </motion.div>
+
+                {/* Benefit 4 */}
+                <motion.div
+                    className='relative duration-500 hover:shadow-[0px_0px_15px_#0e3b58] border-primary p-5 rounded-lg'
+                    initial="hidden"
+                    whileInView="visible"
+                    variants={itemVariants}
+                    whileHover={{ scale: 1.05 }}
+                    viewport={{ once: true, amount: 0.1 }}
+                >
+                    <div className="moving-border"></div>
+                    <img className='w-12' src="/Images/BusinessBenefits/4.png" alt="" />
                     <h2 className='my-2 text-2xl font-semibold text-primary'>Data Transparency</h2>
                     <p>100% visibility into operations</p>
                     <span className='mt-3 text-gray-500'>Real-time insights and analytics through custom dashboards for complete visibility.</span>
@@ -60,7 +122,7 @@ const BusinessBenefits = () => {
                         <li className='flex items-center gap-3'><img className='w-5' src="/Images/BusinessBenefits/star.png" alt="" />Predictive insights</li>
                         <li className='flex items-center gap-3'><img className='w-5' src="/Images/BusinessBenefits/star.png" alt="" />Comprehensive reporting</li>
                     </ul>
-                </div>
+                </motion.div>
             </div>
         </section>
     );
