@@ -16,8 +16,8 @@ const Hero = () => {
                     <p className='text-gray-500 my-5 text-sm'>ZimriTech builds custom AI chatbots, receptionists, and workflow automations to <br />
                         save you time and scale your business.</p>
                     <div className='flex items-center flex-wrap gap-5'>
-                        <button className='py-3 flex items-center gap-2 justify-center px-8 rounded-full border bg-primary border-primary text-white'><WiStars className='text-2xl' /> Get Started <img src="/Images/Home/rignt-arrow.png" alt="" /></button>
-                        <button className='py-5 px-8 rounded-full border flex items-center gap-3 justify-center border-primary text-primary'>Learn More
+                        <button className='sm:py-3  flex items-center gap-2 justify-center px-8 rounded-full border bg-primary border-primary text-white'><WiStars className='text-2xl' /> Get Started <img src="/Images/Home/rignt-arrow.png" alt="" /></button>
+                        <button className='sm:py-5 py-2 px-8 rounded-full border flex items-center gap-3 justify-center border-primary text-primary'>Learn More
                             <img src="/Images/Home/right-arrow-colored.png" alt="" />
                         </button>
                     </div>
