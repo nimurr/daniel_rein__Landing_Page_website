@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="grid md:grid-cols-2 xl:grid-cols-4 items-start container mx-auto gap-20 ">
                 {/* Company Info Section */}
                 <div className="w-full  lg:mb-0">
-                    <h3 className="text-2xl font-semibold">ZimriTech</h3>
+                    <img className="w-40" src="/Images/Auth/headerLogo.png" alt="" />
                     <p className="mt-2 text-gray-300">The only automation platform powered by advanced AI. We help businesses automate, accelerate, and scale with intelligent solutions.</p>
                     <div className="mt-4 text-sm text-gray-300">
                         <p>Melbourne, Victoria, Australia</p>

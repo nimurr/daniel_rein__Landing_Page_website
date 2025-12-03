@@ -52,7 +52,7 @@ const Header = () => {
                 {/* Logo */}
                 <div className="text-2xl ml-5 font-bold text-blue-600">
                     <Link href="/">
-                        <h1 className="text-2xl text-primary">Logo</h1>
+                        <img className="w-40" src="/Images/Auth/headerLogo.png" alt="" />
                     </Link>
                 </div>
 
