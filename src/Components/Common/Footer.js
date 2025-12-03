@@ -48,13 +48,13 @@ const Footer = () => {
             <div className="text-center mt-10">
                 <h5 className="text-2xl font-semibold">Stay Updated</h5>
                 <p className="my-5 text-sm text-gray-300">Get the latest AI insights, case studies, and product updates delivered to your inbox.</p>
-                <div className="flex justify-center">
+                <div className="flex justify-center flex-wrap gap-1">
                     <input
                         type="email"
                         placeholder="Enter your email"
-                        className="py-2 px-4 rounded-l-full border-none focus:outline-none"
+                        className="py-2 px-4 rounded-full border-none focus:outline-none"
                     />
-                    <button className="py-2 px-6 bg-primary text-white rounded-r-full">Services</button>
+                    <button className="py-2 px-6 bg-primary text-white rounded-full">Services</button>
                 </div>
             </div>
             <hr className='my-10' />
