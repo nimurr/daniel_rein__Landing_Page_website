@@ -1,5 +1,6 @@
 'use client';
 import BusinessBenefits from '@/Components/Home/BusinessBenefits';
+import Contactus from '@/Components/Home/Contactus';
 import Hero from '@/Components/Home/Hero';
 import Howitworks from '@/Components/Home/Howitworks';
 import OurMission from '@/Components/Home/OurMission';
@@ -18,6 +19,7 @@ const Page = () => {
             <Predicteds />
             <OurMission />
             <BusinessBenefits />
+            <Contactus />
         </div>
     );
 }
