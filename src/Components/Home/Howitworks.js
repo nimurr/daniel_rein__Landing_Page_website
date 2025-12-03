@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 
 const steps = [
     {
@@ -77,25 +78,25 @@ const Howitworks = () => {
     return (
         <section id='howitworks' className='my-10 lg:my-20 relative'>
             <img
-                className='absolute animate-bounce left-0 -top-20 xl:w-60 w-20'
+                className='absolute animate-bounce left-0 md:-top-20 -top-10 xl:w-60 w-28'
                 src="/Images/howItWork/Visual.png"
                 alt="Design"
             />
-            <div className='bg-[#f1f0f3] p-10 container mx-auto rounded-3xl'>
+            <div className='bg-[#f1f0f3] sm:p-10 p-5 container mx-auto rounded-3xl'>
                 <div className='text-center py-10'>
                     <h2 className='text-5xl mb-3 text-primary font-semibold'>How It Works</h2>
                     <p>Our proven 4-step process ensures your AI transformation is seamless and successful.</p>
                 </div>
 
-                <div className='bg-white p-8 rounded-2xl shadow-md'>
-                    <h3 className='text-3xl font-semibold mb-3'>{steps[currentStep].title}</h3>
-                    <p className='mb-5'>{steps[currentStep].description}</p>
+                <div className='bg-white p-8 rounded-2xl shadow-md border-t-2 border-b-2 border-primary'>
+                    <h3 className='text-3xl text-center font-semibold mb-3 text-primary'>{steps[currentStep].title}</h3>
+                    <p className='mb-5 text-center'>{steps[currentStep].description}</p>
 
                     {/* Step content or form */}
                     {currentStep < steps.length - 1 ? (
-                        <ul className='list-disc pl-5 mb-5'>
+                        <ul className='grid grid-cols-1 lg:grid-cols-2 gap-5 mb-5'>
                             {steps[currentStep].points.map((point, index) => (
-                                <li key={index}>{point}</li>
+                                <li className='list-none flex items-center font-semibold text-gray-700 gap-3 border border-primary p-3 rounded-lg' key={index}><IoMdCheckmarkCircleOutline className='text-primary text-2xl ' />{point}</li>
                             ))}
                         </ul>
                     ) : (
@@ -135,41 +136,60 @@ const Howitworks = () => {
                                     className='w-full p-2 border rounded-lg'
                                 />
                             </div>
-                            <button
-                                type='submit'
-                                className='px-6 py-2 rounded-lg bg-primary text-white'
-                            >
-                                Submit
-                            </button>
+                            <div className='flex items-center gap-3'>
+                                <button
+                                    onClick={prevStep}
+                                    disabled={currentStep === 0}
+                                    className={`px-4 py-4 rounded-full ${currentStep === 0 ? 'bg-gray-300 cursor-not-allowed' : 'border border-primary text-white'}`}
+                                >
+                                    <img className='group-hover:hidden rotate-180' src="/Images/Home/right-arrow-colored.png" alt="" />
+                                </button>
+                                <button
+                                    type='submit'
+                                    className='px-6 py-2 rounded-lg bg-primary text-white'
+                                >
+                                    Submit
+                                </button>
+                            </div>
+
                         </form>
                     )}
 
                     {/* Progress bar */}
-                    <div className='w-full bg-gray-200 rounded-full h-2 my-5'>
-                        <div
-                            className='bg-primary h-2 rounded-full'
-                            style={{ width: `${progressPercentage}%` }}
-                        ></div>
-                    </div>
-
-                    {/* Navigation buttons */}
-                    {currentStep < steps.length - 1 && (
-                        <div className='flex justify-between'>
-                            <button
-                                onClick={prevStep}
-                                disabled={currentStep === 0}
-                                className={`px-6 py-2 rounded-lg ${currentStep === 0 ? 'bg-gray-300 cursor-not-allowed' : 'bg-primary text-white'}`}
-                            >
-                                Previous
-                            </button>
-                            <button
-                                onClick={nextStep}
-                                className='px-6 py-2 rounded-lg bg-primary text-white'
-                            >
-                                {steps[currentStep].buttonText}
-                            </button>
+                    <div className='flex items-center justify-end sm:justify-between sm:gap-5 flex-wrap'>
+                        <div className='flex md:min-w-[450px] min-w-full gap-3 items-center justify-between my-5 text-3xl font-semibold text-primary'>
+                            <h3>0{currentStep + 1}</h3>
+                            <div className='w-full bg-gray-200 rounded-full h-2 my-5'>
+                                <div
+                                    className='bg-primary h-2 rounded-full'
+                                    style={{ width: `${progressPercentage}%` }}
+                                ></div>
+                            </div>
+                            <h3>04</h3>
                         </div>
-                    )}
+
+                        {/* Navigation buttons */}
+                        {currentStep < steps.length - 1 && (
+                            <div className='flex gap-3 justify-between'>
+                                <button
+                                    onClick={prevStep}
+                                    disabled={currentStep === 0}
+                                    className={`px-4 py-4 rounded-full ${currentStep === 0 ? 'bg-gray-300 cursor-not-allowed' : 'border border-primary text-white'}`}
+                                >
+                                    <img className='group-hover:hidden rotate-180' src="/Images/Home/right-arrow-colored.png" alt="" />
+                                </button>
+                                <button
+                                    onClick={nextStep}
+                                    className='px-10 py-2 rounded-full bg-primary text-white'
+                                >
+                                    {steps[currentStep].buttonText}
+                                </button>
+                            </div>
+                        )}
+
+
+
+                    </div>
                 </div>
             </div>
         </section>
