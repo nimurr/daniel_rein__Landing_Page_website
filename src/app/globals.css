@@ -74,17 +74,18 @@ body {
 /* Animation to move top to bottom up and down */
 @keyframes robotAimate {
   0% {
-    transform: translateY(0);
+    transform: translateY(20px);
     /* Start at original position */
   }
 
   50% {
-    transform: translateY(-20px);
+    transform: translateY(-40px);
+    /* transform: rotate(90deg); */
     /* Move up 20px */
   }
 
   100% {
-    transform: translateY(0);
+    transform: translateY(20px);
     /* Return to original position */
   }
 }
