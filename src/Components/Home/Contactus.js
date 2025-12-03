@@ -9,10 +9,10 @@ const Contactus = () => {
             <div>
 
 
-                <main>
+                <div className='main_text_animation'>
                     <h2 className='clip-text text-primary text-[100px] leading-[1.1] font-bold'>Let’s get <br />
                         in touch</h2>
-                </main>
+                </div>
 
 
                 <h3 className='text-2xl font-semibold my-5'>Contact Information</h3>

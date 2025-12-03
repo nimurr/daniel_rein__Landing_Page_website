@@ -174,7 +174,7 @@ body {
   background-image: linear-gradient(to top, #116bb2 0%, #68d0e0 100%);
 }
 
-main {
+.main_text_animation {
   position: relative;
   display: flex;
   /* justify-content: center;
