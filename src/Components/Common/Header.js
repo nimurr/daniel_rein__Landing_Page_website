@@ -46,15 +46,15 @@ const Header = () => {
 
 
     return (
-        <header className="w-full top-0 p-5 z-[999]">
-            <div className="container mx-auto min-h-16 overflow-hidden flex justify-between items-center">
+        <header className="w-full top-0 p-5 z-[999] flex items-center">
+            <div className="text-2xl font-bold text-blue-600">
+                <Link href="/">
+                    <img className="w-40" src="/Images/Auth/logo_nav.png" alt="" />
+                </Link>
+            </div>
+            <div className="container w-full mx-auto min-h-16 overflow-hidden flex justify-center items-center">
 
                 {/* Logo */}
-                <div className="text-2xl font-bold text-blue-600">
-                    <Link href="/">
-                        <img className="w-40" src="/Images/Auth/logo_nav.png" alt="" />
-                    </Link>
-                </div>
 
                 {/* Desktop Menu */}
                 <nav className="hidden lg:flex gap-5 p-2 rounded-full bg-[#c7d2dd] backdrop-blur-sm text-gray-700 font-medium">
