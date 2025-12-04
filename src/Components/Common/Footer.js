@@ -6,11 +6,12 @@ const Footer = () => {
             <div className="grid md:grid-cols-2 xl:grid-cols-4 items-start container mx-auto gap-20 ">
                 {/* Company Info Section */}
                 <div className="w-full  lg:mb-0">
-                    <img className="w-40" src="/Images/Auth/headerLogo.png" alt="" />
-                    <p className="mt-2 text-gray-300">The only automation platform powered by advanced AI. We help businesses automate, accelerate, and scale with intelligent solutions.</p>
+                    <img className="w-40 mb-5" src="/Images/Auth/logo_footer.png" alt="" />
+                    <p className="my-5 text-gray-300">The only automation platform powered by advanced AI. We help businesses automate, accelerate, and scale with intelligent solutions.</p>
                     <div className="mt-4 text-sm text-gray-300">
-                        <p>Melbourne, Victoria, Australia</p>
-                        <p className="mt-2">Support@zimritech.com.au</p>
+                        <p className="font-semibold">ZimriTech Ltd</p>
+                        <p className="my-1">Melbourne, Victoria, Australia</p>
+                        <p >Support@zimritech.com.au</p>
                     </div>
                 </div>
 

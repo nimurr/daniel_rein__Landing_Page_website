@@ -11,7 +11,7 @@ const AboutOurCoreValues = () => {
 
     return (
         <section className='container mx-auto lg:my-20 my-10'>
-            <div className='text-center py-10'>
+            <div className='text-center mb-10'>
                 {/* Title and Description Animation on Scroll */}
                 <motion.h2
                     className='text-5xl mb-3 text-primary font-semibold'
@@ -44,9 +44,8 @@ const AboutOurCoreValues = () => {
                 >
                     <div className="moving-border"></div>
                     <img className='w-12' src="/Images/BusinessBenefits/1.png" alt="" />
-                    <h2 className='my-2 text-2xl font-semibold text-primary'>Save Time</h2>
-                    <p>Up to 40 hours saved per week</p>
-                    <span className='mt-3 text-gray-500'>Automate repetitive tasks and free up your team to focus on strategic initiatives.</span>
+                    <h2 className='my-2 text-2xl font-semibold text-primary'>Client-First Approach</h2>
+                    <span className='mt-3 text-gray-500'>Your business goals are our priority. We design every solution with your specific needs and growth in mind.</span>
 
                 </motion.div>
 
@@ -60,10 +59,9 @@ const AboutOurCoreValues = () => {
                     viewport={{ once: true, amount: 0.1 }}
                 >
                     <div className="moving-border"></div>
-                    <img className='w-12' src="/Images/BusinessBenefits/2.png" alt="" />
-                    <h2 className='my-2 text-2xl font-semibold text-primary'>Reduce Costs</h2>
-                    <p>Average 60% cost reduction</p>
-                    <span className='mt-3 text-gray-500'>Lower operational costs through intelligent automation and optimized processes.</span>
+                    <img className='w-12' src="/Images/about/icons/1.png" alt="" />
+                    <h2 className='my-2 text-2xl font-semibold text-primary'>Automation Excellence</h2> 
+                    <span className='mt-3 text-gray-500'>We believe in the power of intelligent automation to transform your operations and boost productivity.</span>
 
                 </motion.div>
 
@@ -77,10 +75,9 @@ const AboutOurCoreValues = () => {
                     viewport={{ once: true, amount: 0.1 }}
                 >
                     <div className="moving-border"></div>
-                    <img className='w-12' src="/Images/BusinessBenefits/3.png" alt="" />
-                    <h2 className='my-2 text-2xl font-semibold text-primary'>Scale Faster</h2>
-                    <p>10x faster scaling capability</p>
-                    <span className='mt-3 text-gray-500'>Grow your business without proportional increases in operational overhead.</span>
+                    <img className='w-12' src="/Images/about/icons/2.png" alt="" />
+                    <h2 className='my-2 text-2xl font-semibold text-primary'>Security & Reliability</h2> 
+                    <span className='mt-3 text-gray-500'>Your data and operations are protected with enterprise-grade security and 99.9% uptime guarantee.</span>
 
                 </motion.div>
 
@@ -94,10 +91,9 @@ const AboutOurCoreValues = () => {
                     viewport={{ once: true, amount: 0.1 }}
                 >
                     <div className="moving-border"></div>
-                    <img className='w-12' src="/Images/BusinessBenefits/4.png" alt="" />
-                    <h2 className='my-2 text-2xl font-semibold text-primary'>Data Transparency</h2>
-                    <p>100% visibility into operations</p>
-                    <span className='mt-3 text-gray-500'>Real-time insights and analytics through custom dashboards for complete visibility.</span>
+                    <img className='w-12' src="/Images/about/icons/3.png" alt="" />
+                    <h2 className='my-2 text-2xl font-semibold text-primary'>Innovation</h2>
+                    <span className='mt-3 text-gray-500'>We stay ahead of technology trends to bring you cutting-edge solutions that give you a competitive edge.</span>
                 </motion.div>
                 <motion.div
                     className='relative duration-500 hover:shadow-[0px_0px_15px_#0e3b58] border-primary p-5 rounded-lg'
@@ -108,10 +104,9 @@ const AboutOurCoreValues = () => {
                     viewport={{ once: true, amount: 0.1 }}
                 >
                     <div className="moving-border"></div>
-                    <img className='w-12' src="/Images/BusinessBenefits/4.png" alt="" />
-                    <h2 className='my-2 text-2xl font-semibold text-primary'>Data Transparency</h2>
-                    <p>100% visibility into operations</p>
-                    <span className='mt-3 text-gray-500'>Real-time insights and analytics through custom dashboards for complete visibility.</span>
+                    <img className='w-12' src="/Images/about/icons/4.png" alt="" />
+                    <h2 className='my-2 text-2xl font-semibold text-primary'>Partnership</h2> 
+                    <span className='mt-3 text-gray-500'>We're not just a service provider - we're your technology partner, invested in your long-term success.</span>
                 </motion.div>
                 <motion.div
                     className='relative duration-500 hover:shadow-[0px_0px_15px_#0e3b58] border-primary p-5 rounded-lg'
@@ -122,10 +117,9 @@ const AboutOurCoreValues = () => {
                     viewport={{ once: true, amount: 0.1 }}
                 >
                     <div className="moving-border"></div>
-                    <img className='w-12' src="/Images/BusinessBenefits/4.png" alt="" />
-                    <h2 className='my-2 text-2xl font-semibold text-primary'>Data Transparency</h2>
-                    <p>100% visibility into operations</p>
-                    <span className='mt-3 text-gray-500'>Real-time insights and analytics through custom dashboards for complete visibility.</span>
+                   <img className='w-12' src="/Images/about/icons/5.png" alt="" />
+                    <h2 className='my-2 text-2xl font-semibold text-primary'>Passion</h2> 
+                    <span className='mt-3 text-gray-500'>We're passionate about what we do and genuinely care about helping your business thrive.</span>
                 </motion.div>
             </div>
         </section>

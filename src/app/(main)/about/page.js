@@ -1,7 +1,7 @@
 import AboutHero from '@/Components/About/AboutHero';
 import AboutOurCoreValues from '@/Components/About/AboutOurCoreValues';
 import AboutPredicteds from '@/Components/About/AboutPredicteds';
-import Header from '@/Components/Common/Header';
+import AboutWhyChooseUs from '@/Components/About/AboutWhyChooseUs';
 import React from 'react';
 
 const Page = () => {
@@ -10,6 +10,7 @@ const Page = () => {
             <AboutHero />
             <AboutPredicteds />
             <AboutOurCoreValues />
+            <AboutWhyChooseUs />
         </div>
     );
 }
