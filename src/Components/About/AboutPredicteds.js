@@ -9,22 +9,22 @@ const AboutPredicteds = () => {
                 <div className='flex items-center text-white gap-5 p-8 flex-wrap justify-around'>
                     <div className='text-center min-w-52'>
                         <h2 className='text-4xl font-semibold'>50+</h2>
-                        <p className='my-1'>Successful AI Deployments</p>
+                        <p className='my-1'>Happy Clients</p>
                         <img className='w-12 mx-auto' src="/Images/Home/icons/icons-1.png" alt="" />
                     </div>
                     <div className='text-center min-w-52'>
-                        <h2 className='text-4xl font-semibold'>85%</h2>
-                        <p className='my-1'>Client Satisfaction Rate</p>
+                        <h2 className='text-4xl font-semibold'>100+</h2>
+                        <p className='my-1'>Automations Built</p>
+                        <img className='w-12 mx-auto' src="/Images/Home/icons/icons-1.png" alt="" />
+                    </div>
+                    <div className='text-center min-w-52'>
+                        <h2 className='text-4xl font-semibold'>99.9%</h2>
+                        <p className='my-1'>Uptime</p>
                         <img className='w-12 mx-auto' src="/Images/Home/icons/icons-1.png" alt="" />
                     </div>
                     <div className='text-center min-w-52'>
                         <h2 className='text-4xl font-semibold'>24/7</h2>
-                        <p className='my-1'>Support & Monitoring</p>
-                        <img className='w-12 mx-auto' src="/Images/Home/icons/icons-1.png" alt="" />
-                    </div>
-                    <div className='text-center min-w-52'>
-                        <h2 className='text-4xl font-semibold'>24/7</h2>
-                        <p className='my-1'>Support & Monitoring</p>
+                        <p className='my-1'>AI Support</p>
                         <img className='w-12 mx-auto' src="/Images/Home/icons/icons-1.png" alt="" />
                     </div>
                 </div>
