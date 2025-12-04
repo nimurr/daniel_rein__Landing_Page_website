@@ -93,17 +93,17 @@ const Header = () => {
                 <div className="lg:hidden rounded-lg backdrop-blur-sm bg-white/30 border-t border-gray-200">
                     <nav className="flex flex-col items-center space-y-3 py-4 text-gray-700 font-medium">
                         {navItems.map((item) => (
-                            <Link
-                                key={item.href}
-                                href={item.href}
-                                onClick={() => setIsOpen(false)}
-                                className={`transition ${pathname.includes(item.href) // Check if pathname contains item.href
-                                    ? "text-blue-600 font-semibold border-b-2 border-blue-600"
-                                    : "hover:text-blue-600"
+                            <a
+                                key={item.id}
+                                href={`${item.id == "about" ? "/about" : "/#" + item.id}`}
+                                onClick={() => setActiveSection(item.id)}
+                                className={`rounded-full transition flex items-center py-3 px-8 justify-center ${activeSection === item.id
+                                    ? "bg-primary text-white "
+                                    : "text-gray-800"
                                     }`}
                             >
-                                {item.label}
-                            </Link>
+                                {item.name}
+                            </a>
                         ))}
                     </nav>
                 </div>

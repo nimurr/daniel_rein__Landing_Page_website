@@ -198,3 +198,11 @@ h1 {
     }
   }
 }
+
+@media screen and (max-width : 768px) {
+  .main_text_animation {
+    .clip-text {
+      font-size: 3rem;
+    }
+  }
+}
