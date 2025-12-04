@@ -50,7 +50,7 @@ const Header = () => {
             <div className="container mx-auto min-h-16 overflow-hidden flex justify-between items-center">
 
                 {/* Logo */}
-                <div className="text-2xl ml-5 font-bold text-blue-600">
+                <div className="text-2xl font-bold text-blue-600">
                     <Link href="/">
                         <img className="w-40" src="/Images/Auth/headerLogo.png" alt="" />
                     </Link>
@@ -61,7 +61,7 @@ const Header = () => {
                     {navItems.map((item) => (
                         <a
                             key={item.id}
-                            href={`#${item.id}`}
+                            href={`${item.id == "about" ? "/about" : "/#" + item.id}`}
                             onClick={() => setActiveSection(item.id)}
                             className={`rounded-full transition flex items-center py-3 px-8 justify-center ${activeSection === item.id
                                 ? "bg-primary text-white "

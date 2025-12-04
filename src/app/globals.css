@@ -164,38 +164,37 @@ body {
   align-items: center; */
   /* width: 480px; */
   /* height: 480px; */
-  padding: 20px;
-  background: #fff;
-  
+  /* padding: 20px; */
+  /* background: #fff; */
+
   .clip-text {
     font-size: 7rem;
     font-weight: full;
     /* text-align: center; */
     color: #68d0e0;
-    
+
     @supports (background-clip:text) or (-webkit-background-clip:text) {
       color: transparent;
       background-clip: text;
       -webkit-background-clip: text;
       background-image: url(https://media.giphy.com/media/xULW8Fw2ZhznUptrYA/giphy.gif);
       background-size: cover;
-      background-position: center; 
+      background-position: center;
     }
   }
-  
+
 }
 
 h1 {
   color: #fff;
   margin: 0;
-  
+
   pre {
-    
+
     span {
-      background-color: rgba(#000,.15);
+      background-color: rgba(#000, .15);
       padding: 0.3rem;
       border-radius: 6px;
     }
   }
 }
- 
