@@ -82,7 +82,7 @@ const Howitworks = () => {
                 src="/Images/howItWork/Visual.png"
                 alt="Design"
             />
-            
+
             <div className='bg-[#f1f0f381] sm:p-10 p-5 container mx-auto rounded-3xl relative'>
                 {/* Glowing Border Animation */}
                 <div className="moving-border"></div>
@@ -142,21 +142,7 @@ const Howitworks = () => {
                                     className='w-full p-2 border rounded-lg'
                                 />
                             </div>
-                            <div className='flex items-center gap-3'>
-                                <button
-                                    onClick={prevStep}
-                                    disabled={currentStep === 0}
-                                    className={`px-4 py-4 rounded-full ${currentStep === 0 ? 'bg-gray-300 cursor-not-allowed' : 'border border-primary text-white'}`}
-                                >
-                                    <img className='group-hover:hidden rotate-180' src="/Images/Home/right-arrow-colored.png" alt="" />
-                                </button>
-                                <button
-                                    type='submit'
-                                    className='px-6 py-2 rounded-lg bg-primary text-white'
-                                >
-                                    Submit
-                                </button>
-                            </div>
+
                         </form>
                     )}
 
@@ -174,7 +160,7 @@ const Howitworks = () => {
                         </div>
 
                         {/* Navigation buttons */}
-                        {currentStep < steps.length - 1 && (
+                        {currentStep < steps.length - 1 ? (
                             <div className='flex gap-3 justify-between'>
                                 <button
                                     onClick={prevStep}
@@ -190,7 +176,24 @@ const Howitworks = () => {
                                     {steps[currentStep].buttonText}
                                 </button>
                             </div>
+                        ) : (
+                            <div className='flex items-center gap-3'>
+                                <button
+                                    onClick={prevStep}
+                                    disabled={currentStep === 0}
+                                    className={`px-4 py-4 rounded-full ${currentStep === 0 ? 'bg-gray-300 cursor-not-allowed' : 'border border-primary text-white'}`}
+                                >
+                                    <img className='group-hover:hidden rotate-180' src="/Images/Home/right-arrow-colored.png" alt="" />
+                                </button>
+                                <button
+                                    type='submit'
+                                    className='px-6 py-2 rounded-lg bg-primary text-white'
+                                >
+                                    Submit
+                                </button>
+                            </div>
                         )}
+
                     </div>
                 </div>
             </div>
