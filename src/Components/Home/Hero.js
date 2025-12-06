@@ -7,7 +7,7 @@ const Hero = () => {
     return (
         <section id='home' className='container mx-auto bg-gradient-to-l from-[#c7d2dde0] to-[#e4e9ee8f] lg:h-[95vh] h-auto relative overflow-hidden rounded-[50px] mt-5'>
             <Header />
-            <img className='absolute lg:block hidden right-0 bottom-0 w-1/2' src="/Images/Home/3dgifmaker92728.gif" alt="" />
+            <img className='absolute lg:block hidden right-0 bottom-20 animatePlusImage animate-pulse w-1/2' src="/Images/Home/animated_sidebarImage.png" alt="" />
 
             <div className='flex items-start gap-20 lg:gap-32 justify-end h-full flex-col z-10'>
                 <div className='lg:p-10 p-5 '>

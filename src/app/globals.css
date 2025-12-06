@@ -206,3 +206,23 @@ h1 {
     }
   }
 }
+
+
+@keyframes animatePlusImage {
+  0% {
+    transform: scale(1.2);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.animatePlusImage {
+  animation: animatePlusImage 4s linear infinite;
+  /* Adjust the time as per your needs */
+}
