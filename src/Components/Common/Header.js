@@ -76,27 +76,28 @@ const Header = () => {
 
 
                 {/* Mobile Menu Button */}
-                <button
-                    onClick={() => setIsOpen(!isOpen)}
-                    className="lg:hidden focus:outline-none"
-                >
-                    {isOpen ? (
-                        <RxCross1 className="text-3xl" />
-                    ) : (
-                        <IoMenuOutline className="text-3xl" />
-                    )}
-                </button>
+
             </div>
 
+            <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="lg:hidden focus:outline-none"
+            >
+                {isOpen ? (
+                    <RxCross1 className="text-3xl" />
+                ) : (
+                    <IoMenuOutline className="text-3xl" />
+                )}
+            </button>
             {/* Mobile Menu */}
             {isOpen && (
-                <div className="lg:hidden rounded-lg backdrop-blur-sm bg-white/30 border-t border-gray-200">
+                <div className="lg:hidden absolute top-20 w-full left-0 rounded-lg backdrop-blur-sm bg-white/30 border-t border-gray-200">
                     <nav className="flex flex-col items-center space-y-3 py-4 text-gray-700 font-medium">
                         {navItems.map((item) => (
                             <a
                                 key={item.id}
                                 href={`${item.id == "about" ? "/about" : "/#" + item.id}`}
-                                onClick={() => setActiveSection(item.id)}
+                                onClick={() => {setActiveSection(item.id);setIsOpen(!isOpen)}}
                                 className={`rounded-full transition flex items-center py-3 px-8 justify-center ${activeSection === item.id
                                     ? "bg-primary text-white "
                                     : "text-gray-800"
