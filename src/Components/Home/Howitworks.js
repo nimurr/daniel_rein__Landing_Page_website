@@ -76,20 +76,20 @@ const Howitworks = () => {
     const progressPercentage = ((currentStep + 1) / steps.length) * 100;
 
     return (
-        <section id='howitworks' className='my-10 lg:my-20 relative'>
+        <section id='howitworks' className='my-10 lg:my-20  relative'>
             <img
                 className='absolute animate-bounce left-0 md:-top-20 z-10 -top-10 xl:w-60 w-28'
                 src="/Images/howItWork/Visual.png"
                 alt="Design"
             />
 
-            <div className='bg-[#f1f0f381] sm:p-10 p-5 container mx-auto rounded-3xl relative'>
+            <div className='bg-primary sm:p-10 p-5 container mx-auto rounded-3xl relative'>
                 {/* Glowing Border Animation */}
-                <div className="moving-border"></div>
+                {/* <div className="moving-border"></div> */}
 
                 <div className='text-center py-10'>
-                    <h2 className='text-5xl mb-3 text-primary font-semibold'>How It Works</h2>
-                    <p>Our proven 4-step process ensures your AI transformation is seamless and successful.</p>
+                    <h2 className='text-5xl mb-3 text-white font-semibold'>How It Works</h2>
+                    <p className='text-gray-300'>Our proven 4-step process ensures your AI transformation is seamless and successful.</p>
                 </div>
 
                 <div className='bg-white p-8 rounded-2xl shadow-md border-t-2 border-b-2 border-primary relative'>

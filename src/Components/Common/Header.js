@@ -97,7 +97,7 @@ const Header = () => {
                             <a
                                 key={item.id}
                                 href={`${item.id == "about" ? "/about" : "/#" + item.id}`}
-                                onClick={() => {setActiveSection(item.id);setIsOpen(!isOpen)}}
+                                onClick={() => { setActiveSection(item.id); setIsOpen(!isOpen) }}
                                 className={`rounded-full transition flex items-center py-3 px-8 justify-center ${activeSection === item.id
                                     ? "bg-primary text-white "
                                     : "text-gray-800"
