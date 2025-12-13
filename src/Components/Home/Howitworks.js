@@ -86,6 +86,7 @@ const Howitworks = () => {
             <div className='bg-primary sm:p-10 p-5 container mx-auto rounded-3xl relative'>
                 {/* Glowing Border Animation */}
                 {/* <div className="moving-border"></div> */}
+                {/* update */}
 
                 <div className='text-center py-10'>
                     <h2 className='text-5xl mb-3 text-white font-semibold'>How It Works</h2>
